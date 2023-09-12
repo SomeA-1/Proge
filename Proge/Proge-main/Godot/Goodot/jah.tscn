@@ -1,0 +1,103 @@
+[gd_scene load_steps=15 format=2]
+
+[ext_resource path="res://idk.gd" type="Script" id=1]
+[ext_resource path="res://scr2.gd" type="Script" id=2]
+[ext_resource path="res://epicfight.gd" type="Script" id=3]
+[ext_resource path="res://players.gd" type="Script" id=4]
+[ext_resource path="res://palk.gd" type="Script" id=5]
+[ext_resource path="res://stats.gd" type="Script" id=6]
+[ext_resource path="res://fight.gd" type="Script" id=7]
+[ext_resource path="res://bg2.jpg" type="Texture" id=8]
+[ext_resource path="res://COMIC.TTF" type="DynamicFontData" id=9]
+
+[sub_resource type="DynamicFont" id=2]
+size = 32
+font_data = ExtResource( 9 )
+
+[sub_resource type="DynamicFont" id=3]
+size = 26
+font_data = ExtResource( 9 )
+
+[sub_resource type="DynamicFont" id=4]
+size = 19
+font_data = ExtResource( 9 )
+
+[sub_resource type="DynamicFont" id=5]
+size = 81
+outline_size = 3
+outline_color = Color( 1, 0, 0, 1 )
+font_data = ExtResource( 9 )
+
+[sub_resource type="DynamicFont" id=6]
+size = 26
+outline_size = 1
+outline_color = Color( 0, 0, 0, 1 )
+font_data = ExtResource( 9 )
+
+[node name="Node" type="Node"]
+script = ExtResource( 1 )
+
+[node name="Node" type="Node" parent="."]
+script = ExtResource( 2 )
+
+[node name="Node2" type="Node" parent="."]
+script = ExtResource( 3 )
+
+[node name="Node3" type="Node" parent="."]
+script = ExtResource( 4 )
+
+[node name="Node4" type="Node" parent="."]
+script = ExtResource( 5 )
+
+[node name="Node5" type="Node" parent="."]
+script = ExtResource( 6 )
+
+[node name="Node6" type="Node" parent="."]
+script = ExtResource( 7 )
+
+[node name="bg" type="Sprite" parent="Node6"]
+position = Vector2( 512, 300 )
+texture = ExtResource( 8 )
+
+[node name="velud" type="RichTextLabel" parent="Node6/bg"]
+anchor_right = 0.377
+anchor_bottom = 0.157
+margin_left = 149.0
+margin_top = 248.0
+margin_right = 130.952
+margin_bottom = 247.8
+custom_fonts/normal_font = SubResource( 2 )
+bbcode_text = "Vaenlase elud: {$vaenlaseelud}"
+text = "Vaenlase elud: {$vaenlaseelud}"
+fit_content_height = true
+
+[node name="ammo" type="RichTextLabel" parent="Node6/bg"]
+margin_left = -209.0
+margin_top = 47.0
+margin_right = -52.0
+margin_bottom = 87.0
+custom_fonts/normal_font = SubResource( 3 )
+text = "Ammo: x"
+
+[node name="help" type="RichTextLabel" parent="Node6/bg"]
+margin_left = -466.0
+margin_top = 90.0
+margin_right = -126.0
+margin_bottom = 129.0
+custom_fonts/normal_font = SubResource( 4 )
+text = "tehkwem idagi juvbaabaa"
+
+[node name="Go" type="RichTextLabel" parent="Node6/bg"]
+margin_left = -235.0
+margin_top = -162.0
+margin_right = 383.0
+margin_bottom = 19.0
+custom_fonts/normal_font = SubResource( 5 )
+text = "MÄNG LÄBI"
+
+[node name="miss" type="RichTextLabel" parent="Node6/bg"]
+margin_left = -11.0
+margin_top = -40.0
+margin_right = 148.0
+custom_fonts/normal_font = SubResource( 6 )
+text = "Lasid Mööda!"

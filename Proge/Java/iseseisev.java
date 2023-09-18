@@ -3,7 +3,7 @@
 import java.util.Random;
 import java.util.Scanner;
 public class iseseisev {
-         private static Scanner scanner = new Scanner(System.in);
+        private static Scanner scanner = new Scanner(System.in);
 
     public static void main(String[] args) {
         System.out.print("(1) Liida kaks arvu\n(2) Väljasta numbrid 1-67\n(3) Kolmnurk\n(4) Täringumäng\n(5) Vaiba hind\nVali ülesanne:");

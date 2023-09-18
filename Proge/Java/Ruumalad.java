@@ -22,4 +22,9 @@ public class Ruumalad {
 		double p = alus*laius*korgus/3;
 		return p;
 	}
+	public static double keraP(String r) {
+		float raadius = Float.parseFloat(r);
+		double p = 4*Math.PI*raadius*raadius*raadius/3;
+		return p;
+	}
 }

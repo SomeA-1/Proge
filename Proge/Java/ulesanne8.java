@@ -3,15 +3,24 @@ import java.util.Scanner;
 public class ulesanne8{
     private static Scanner scanner = new Scanner(System.in);
     public static void main(String[] args) {
-        System.out.println("(1) Rööpküliku ruumala \n(2) Risttahuka ruumala \n(3) Püramiidi ruumala");
+        String a ="";
+        String b ="";
+        String h ="";
+        String r ="";
+        System.out.println("(1) Rööpküliku ruumala \n(2) Risttahuka ruumala \n(3) Püramiidi ruumala \n(4) Ringi ruumala");
         System.out.print("Vali Ülesanne: ");
         int valik = scanner.nextInt();
+        if(valik<4){
         System.out.print("Sisesta laius: ");
-        String a = scanner.next();
+        a = scanner.next();
         System.out.print("Sisesta pikkus: ");
-        String b = scanner.next();
+        b = scanner.next();
         System.out.print("Sisesta kõrgus: ");
-        String h = scanner.next();
+        h = scanner.next();}
+        else{
+            System.out.print("Sisesta raadius: ");
+            r = scanner.next();
+        }
         double p = 0;
         String kujund = "";
         //Switch statement mis vahetab ruumala arvutamist
@@ -22,6 +31,8 @@ public class ulesanne8{
             kujund = "Risttahuka";  break;
             case 3: p = Ruumalad.kolmnurkP(a, b, h);
             kujund = "Püramiidi";  break;
+            case 4: p = Ruumalad.keraP(r);
+            kujund = "Kera";  break;
             default: System.out.println("Sellist ülesannet ei ole");
         }
         System.out.println(kujund+" pindala on: "+p);

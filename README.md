@@ -1,1 +1,1 @@
-![](https://github.com/SomeA-1/Python/blob/main/mario.gif)
+![](https://github.com/Tertenea/mario-asjad/blob/main/mario.gif)

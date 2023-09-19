@@ -8,6 +8,7 @@ public class iseseisev {
     public static void main(String[] args) {
         System.out.print("(1) Liida kaks arvu\n(2) Väljasta numbrid 1-67\n(3) Kolmnurk\n(4) Täringumäng\n(5) Vaiba hind\nVali ülesanne:");
         int valik = scanner.nextInt();
+        //switch case et valida ülesanne
         switch(valik){
         case 1: esimene(); break;
         case 2: uheksas(); break;
@@ -17,7 +18,7 @@ public class iseseisev {
         default: System.out.println("Sellist ülesannet ei ole");
         }
     }
-    //1
+    //1  lihtne liitmine
     public static void esimene(){
         System.out.print("Sisesta number: ");
             int input1 = scanner.nextInt();
@@ -26,13 +27,13 @@ public class iseseisev {
         int vastus = input1 + input2;
         System.out.println(input1+"+"+input2+"="+vastus);        
     }
-    //2
+    //2 1-67
     public static void uheksas(){
         for(int i = 1; i <= 67; i++){
             System.out.print(i);
         }
     }
-    //3
+    //3 kolmnurk*****************************************
     public static void kolmteist(){
         System.out.print("Kui suur kolmnurga alus on?: ");
         int alus = scanner.nextInt();
@@ -49,14 +50,16 @@ public class iseseisev {
             System.out.println("\n");
         }
     }
-    //4
+    //4 täringumäng
     public static void kakskymmendkolm(){
         Random rand = new Random(); 
+        //deklraaib randomi ja punktiseisu
         int playerwins = 0;
         int computerwins = 0;
+        //consenti kasutatakse uuesti mängimisel
         boolean consent = true;
         System.out.println("Oled alustanud mängu maailma kõige võimsama tehisintellektiga.");
-        System.out.print("Kas sa oled valmis?");
+        System.out.print("Kas sa oled valmis? ");
         String ready = scanner.next();
         if(ready.equals("jah")){
             System.out.println("Mäng algab!");}
@@ -84,7 +87,7 @@ public class iseseisev {
                 }
             }   
     }
-    //5
+    //5 lihtne matemaatika
     public static void kakskymmendkuus(){
         System.out.print("kui kallis on vaip ruutmeetri kohta?(x eur/m²): ");
         int vaibahind = scanner.nextInt();

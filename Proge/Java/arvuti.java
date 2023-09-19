@@ -15,11 +15,11 @@ public class arvuti {
        this.PSU = PSU;
    }
    public void specsheet(){
-      System.out.println("GPU: "+GPU+"\nCPU: "+CPU+"\nRAM: "+RAM+"\nStorage: "+Storage+"\nPSU: "+PSU);
-      //String vastus = scanner.nextLine();
-      //if(vastus == "jah"){
-      //   specchange();
-      //}
+      System.out.print("GPU: "+GPU+"\nCPU: "+CPU+"\nRAM: "+RAM+"\nStorage: "+Storage+"\nPSU: "+PSU + "\nKas soovite komponente muuta?: ");
+      String vastus = scanner.nextLine();
+      if(vastus == "jah"){
+         specchange();
+      }
    }
    public void specchange(){
       System.out.println("GPU: "+GPU+"\nCPU: "+CPU+"\nRAM: "+RAM+"\nStorage: "+Storage+"\nPSU: "+PSU);

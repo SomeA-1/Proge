@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="vapp.png">
+    <title>Ülesanne 6</title>
+</head>
+<body style="background-color:black; color:white; text-align:center ">
+    <div class="header">
+        <h1>Avarsalu.Com</h1>
+        <p>Experts in identiy theft <br> since 1958</p>
+            
+    </div>
+    <div class="form">
+        <table>
+            <caption>Identity theft sign-up form</caption>
+            <tr> <th>Kasutajanimi: </th> <th><input type="text" placeholder="Rainio Metskoor" maxlength="6" required></th></tr>
+            <tr> <th>Isikukood: </th> <th><input type="text" placeholder="xxxxxxxxxxx" maxlength="11" required></th></tr>
+            <tr> <th>Kursus: </th> <th> <input type="text" placeholder="max pikkus 3" maxlength="3" required> </th></tr>
+            <tr> <th>Osakonna number: </th> <th> <input type="number" value="1" min="1" max="9" step="1" required> </th></tr>
+            <tr> <th> Parool: </th> <th> <input type="text" required> </th></tr>
+
+            <tr> <th> Vali teenus </th> <th> 
+                <select>
+                <option value="">-- Vali teenus --</option>
+                <option value="pun">10 min  / 20€ </option>
+                <option value="sin">1h / 50€</option>
+                <option value="kol">2h / 75€</option>
+              </select></th></tr>
+            <tr>
+                <th> Roll </th> <th>
+                <input type="radio" name="roll" value="admin">Admin<br>
+                <input type="radio" name="roll" value="user">User<br>
+                <input type="radio" name="roll" value="Mod">Moderator 
+                </th></tr> 
+                <tr><th>Nõustun kasutajatingimustega: </th> <th> <input type="checkbox" name="varv" value="pun"><br></th></tr>
+                <tr><th>Lühike enesetutvustus: </th><th>
+                    <textarea rows="7" cols="30" placeholder="Minimum 3000 sõna"></textarea><br>
+                    <input type="submit" value="Salvesta">
+                </th></tr>
+           <tr> <td><input value="Clear" name="clr" type="reset"></th><th> <input value="Registreeru" name="reg" type="submit"></td></tr>
+        </table>
+    </div>
+</body>
+</html>

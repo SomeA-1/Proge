@@ -1,0 +1,28 @@
+h1{
+    background-color: aliceblue;
+    color: tan;    
+}
+h2{
+    font-size: 72px; text-transform: uppercase;
+    font-family: Arial;
+    color: #fff;
+    background-color: black;
+    width: 500px;
+    height: 80px;
+    padding: 40px;
+    text-shadow: 0 0 10px #fff,
+        0 0 20px #fff,
+        0 0 30px #fff,
+        0 0 40px #ff00de,
+        0 0 70px #ff00de,
+        0 0 80px #ff00de,
+        0 0 100px #ff00de,
+        0 0 150px #ff00de;
+  }
+
+
+p{
+    color:blue;
+    font-size: 20px;
+    font-family: Comic Sans MS;
+}

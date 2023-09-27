@@ -1,0 +1,126 @@
+*{
+  font-family: Helvetica, Papyrus, Comic Sans MS;
+}
+html{
+  background-color: rgb(148, 148, 148);
+  width: 1200px;
+  margin: auto;
+  line-height: 1.8;
+}
+.bg{
+  background-color: rgb(255, 255, 255);
+}
+.banner{
+    background-image:url(taust.png);
+    background-position: center;
+    text-align: center;
+    height: 580px;
+  }
+.container{
+    /* border-style:solid;
+    border-color:#F00; */
+  width: 600px;
+  padding-top: 420px;
+  padding-left: 5%;
+  text-align:left;
+  float:left;
+  color:white;
+}
+.container h1{
+  font-size: 2.2rem;
+}
+.container h2{
+  font-size: 1.1rem;
+}
+.menu{
+    /* border-style:solid;
+    border-color:#F00; */
+  float:right;
+  font-size: 17px;
+  text-align:end;
+  padding:5%;
+  padding-top: 490px;
+}
+.menu a:active{
+  color: rgb(255, 255, 255);
+}
+.menu a:hover{
+  color: rgb(255, 255, 255);
+}
+.menu a:link{
+  color: rgb(255, 255, 255);
+}
+.menu a:visited{
+  color: rgb(0, 0, 0);
+}
+.content{
+    /* border-style:solid;
+    border-color:#F00; */
+  text-align: center;
+  background-color: white;
+  padding-left: 300px;
+  padding-right: 300px;
+}
+.meat{
+    /* border-style:solid;
+    border-color:#F00; */
+  background-color: white;
+}
+.meat table{
+  margin: auto;
+  width: 100%;
+  border-collapse: collapse;
+  text-align: center;
+  font-size: 0.95rem;
+}
+.menu a{
+  text-decoration: none;
+  color: white
+}
+.menu li{
+  list-style-type: none;
+  padding-left: 0px 30px;
+}
+.menu ul > li{
+  padding: 0px 100px;
+}
+.footer{
+    /* border-style:solid;
+    border-color:#F00; */
+  text-align: center;
+  font-size: 17px;
+  padding: auto;
+  background-color: white;
+}
+  /*
+Pilt tekstis: https://baconmockup.com/
+Taustapilt: https://coolbackgrounds.io/
+Tekst: https://www.lipsum.com/
+
+Lehe laius: 1200px, keskel, helehalli taustaga
+Banneri osa
+	Konteineri kõrgus 580px
+	Sisu ei ole vastu serva
+	Pealkiri: 2.2rem, valge
+	Slogan: 1.1rem, valge
+	Menüü: paremal, teksti suurus 17px
+	
+	
+Sisu osa
+	Konteineri kõrgus 200px
+	Pealkiri: 2rem, must, keskel
+	Tekst: 17px, reasamm 1.8
+	Tühi ala: üleval ja all 60px, vasakul ja paremal auto
+	
+
+Pildiriba
+	Piltide suurus: 250x250px
+	Pealkiri ja hind: 1.3rem, sinine
+	Tekst: 0.95rem, reasamm 1.8
+	Vahed lisa silma järgi
+	
+	
+Jaluse osa
+	Kõrgus: 40px
+	Tekst: 17px
+/*

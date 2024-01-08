@@ -14,6 +14,7 @@ html{
     background-image:url(taust.png);
     background-position: center;
     text-align: center;
+    color:white;
     height: 580px;
   }
 .container{

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css">
+    <title>Title</title>
+</head>
+<body>
+
+    <div class="container">
+        <h3>Tabel</h3>
+        <div class="nav">
+            <form class="form-inline ml-auto">
+                <input class="form-control mr-sm-2" type="search" placeholder="otsi..." aria-label="Otsi">
+                <button class="btn btn-outline-success" type="submit">Otsi</button>
+              </form>
+        </div>
+       
+        <td><button type="button" class="btn btn-success">+ Lisa uus</button></td>
+
+        <table class="table table-striped">
+          <thead class="thead-dark">
+            <tr>
+                <th scope="col">ID</th>
+                <th scope="col">Pilt</th>
+                <th scope="col">Eesnimi</th>
+                <th scope="col">Perenimi</th>
+                <th scope="col">Email</th>
+                <th scope="col"> </th>
+                <th scope="col"> </th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">1</th>
+              <td><img src="https://picsum.photos/50/50?random=1" alt="Random image" class="rounded-circle"></td>
+              <td>Heli</td>
+              <td>Kopter</td>
+              <td>heli@kopter.ee</td>
+              <td><button type="button" class="btn btn-warning">Muuda</button></td>
+              <td><button type="button" class="btn btn-danger">Kustuta</button></td>
+            </tr>
+            <tr>
+              <th scope="row">2</th>
+              <td><img src="https://picsum.photos/50/50?random=2" alt="Random image" class="rounded-circle"></td>
+              <td>Anna</td>
+              <td>Nuga</td>
+              <td>anna@nuga.com</td>
+              <td><button type="button" class="btn btn-warning">Muuda</button></td>
+              <td><button type="button" class="btn btn-danger">Kustuta</button></td>
+            </tr>
+            <tr>
+              <th scope="row">3</th>
+              <td><img src="https://picsum.photos/50/50?random=3" alt="Random image" class="rounded-circle"></td>
+              <td>Imre</td>
+              <td>Tard</td>
+              <td>imre@tard.eu</td>
+              <td><button type="button" class="btn btn-warning">Muuda</button></td>
+              <td><button type="button" class="btn btn-danger">Kustuta</button></td>
+            </tr>
+            <th scope="row">4</th>
+            <td><img src="https://picsum.photos/50/50?random=4" alt="Random image" class="rounded-circle"></td>
+            <td>Mairo</td>
+            <td>Koorhein</td>
+            <td>mairo@koorhein.ee</td>
+            <td><button type="button" class="btn btn-warning">Muuda</button></td>
+            <td><button type="button" class="btn btn-danger">Kustuta</button></td>
+          </tr>
+          </tbody>
+        </table>
+        <nav>
+            <ul class="pagination">
+              <li class="page-item"><a class="page-link" href="#">&laquo;</a></li>
+              <li class="page-item"><a class="page-link" href="#">1</a></li>
+              <li class="page-item"><a class="page-link" href="#">2</a></li>
+              <li class="page-item active"><a class="page-link" href="#">3</a></li>
+              <li class="page-item"><a class="page-link" href="#">&raquo;</a></li>
+            </ul>
+          </nav>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+</body>
+</html>

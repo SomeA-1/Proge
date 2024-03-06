@@ -4,7 +4,7 @@ $enimi = 'Viljar';
 $pnimi = "Kuzmin";
 $nimi = $enimi.' '.$pnimi;
 $vanus = 25;
-$kaal = 75;z
+$kaal = 75;
 
 echo 'Tere '.$nimi.'!<br>';
 echo 'Sinu vanus: '.$vanus.'<br>';

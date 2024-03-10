@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>toosed</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css">
+</head>
+
+
+
+<body>
+
+  <div class="container">
+    <div class="row text-end">
+      <p> 
+        <span class='icon fas fa-envelope'></span> a@avarsalu.ee
+        <span class='icon fas fa-phone'></span> +420 │
+        <span class='icon fas fa-book'></span>
+        <span class='icon fas fa-crow'></span>
+        <button style="border: none;" class='icon fas fa-search' id="search-icon" onclick="toggleSearchBox()"></button>
+      </p>
+    </div>
+
+    <div id="search-box" class="d-none">
+      <input type="text" class="form-control" placeholder="Search...">
+    </div>
+
+
+    <nav class="navbar navbar-expand-lg">
+      <div class="container-fluid">
+        <h2>avarsalu.ee</h2>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto">
+            <li><a href="index.html" class="nav-link px-3 link-secondary">Home</a></li>
+            <li><a href="kt_tooted.html" class="nav-link px-3 link-body-emphasis">Tooted</a></li>
+            <li><a href="kt_teenused.html" class="nav-link px-3 link-secondary">Teenused</a></li>
+            <li><a href="kt_kontakt.html" class="btn btn-primary me-2 text-white">Kontakt</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+
+    <div class="p-5 pb-md-5 mx-auto text-center pricing-footer">
+      <h1 class="display-4">Meie tooted</h1>
+      <p class="fs-5 text-muted">Lorem ipsum dolor, sit amet consectetur adipisicing elit. m eveniet culpa deserunt.</p>
+    </div>
+
+    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+      <div class="col">
+        <div class="card shadow-sm">
+          <img src="https://picsum.photos/id/535/400/400">
+            <div class="card-body">
+              <h2>riidepuu</h2>
+            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad ipsa repellat soluta quibusdam illum temporibus ullam accusamus, officia ex atque optio incidunt perferendis, aliquid vitae qui nobis nisi?</p>
+            <div class="d-flex justify-content-between align-items-center">
+              <div class="btn">
+                <button type="button" class="btn btn-success">Osta</button>
+              </div>
+              <h4>5€</h4>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card shadow-sm">
+          <img src="https://picsum.photos/id/146/400/400">
+          <div class="card-body">
+            <h2>ratas</h2>
+            <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vel ipsum error mollitia ipsa alias quo, nobis eum aspernatur esse eveniet, animi quae ad explicabo architecto sapiente ipsam, sed quam ut?</p>
+            <div class="d-flex justify-content-between align-items-center">
+              <div class="btn">
+                <button type="button" class="btn btn-success">Osta</button>
+              </div>
+              <h4>15€</h4>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card shadow-sm">
+          <img src="https://picsum.photos/id/225/400/400">
+          <div class="card-body">
+            <h2>tee</h2>
+            <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dicta inventore nisi id hic itaque ipsum ad voluptas suscipit officiis? Dolor perferendis provident iste corporis corrupti libero rem odit unde modi.</p>
+            <div class="d-flex justify-content-between align-items-center">
+              <div class="btn">
+                <button type="button" class="btn btn-success">Osta</button>
+              </div>
+              <h4>1€</h4>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous">
+      </script>
+    <script>
+      function toggleSearchBox() {
+        const searchBox = document.getElementById('search-box');
+        searchBox.classList.toggle('d-none');
+        if (!searchBox.classList.contains('d-none')) {
+          searchBox.querySelector('input').focus();
+        }
+      }
+    </script>
+</body>
+
+</html>

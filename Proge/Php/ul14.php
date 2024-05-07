@@ -9,7 +9,8 @@
 <div class="container">
 <?php
 // Arko Avarsalu, Ül x, ..24
-echo "<h1>Ma ei tea miks see ei tööta aga naudi mu kassist pilte</h1>";
+echo "<h1>Ma ei tea miks see vahepeal ei tööta aga naudi mu kassist pilte</h1>";
+error_reporting(0);
 $kataloog = 'pildid/';
 $asukoht = opendir($kataloog);
 $pildid = array();

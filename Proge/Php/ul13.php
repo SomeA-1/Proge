@@ -10,6 +10,7 @@
 <?php
 // Arko Avarsalu, Ül x, ..24
 //AINULT JPG and JPEG image uploader with image viewer
+error_reporting(0);
 echo "<br><form action='#' method='post' enctype='multipart/form-data'> Vali pilt <input type='file' name='fileToUpload' id='fileToUpload'> <input type='submit' value='Lae pilt üles' name='submit'></form><br>";
 $errorcase = "";
 $target_dir = "uploads/";

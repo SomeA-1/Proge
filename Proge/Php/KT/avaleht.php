@@ -9,13 +9,14 @@
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css">
+        <script src="https://kit.fontawesome.com/5f11feec13.js" crossorigin="anonymous"></script>
 <link rel="stylesheet" href="kt.css">
 </head>
 <!-- 
 Arko Avarsalu, KT, 4.3.24
 Koosta Bootstrap5 abil samasugune leht 1p
 	- kohandub ja valideerub
-Koosta menÃ¼Ã¼, millel klikkides sisu muutub dÃ¼naamiliselt 1p
+Koosta men, millel klikkides sisu muutub dÃ¼naamiliselt 1p
 	- teiste lehtede sisse pane lihtsalt pealkiri ja tekst
 	- kui lehte ei eksisteeri, siis tuleb vastav teade
 Kasuta massiivi, et avalehel Jumbotroni sees olev sisu kuvatakse suvaliselt (tekst ja pilt) 2p
@@ -27,35 +28,38 @@ Loo adminni leht, kus admin saab tooteid kustutada ja lisada 4p
 	<div class="container">
 	<nav class="navbar navbar-expand-lg navbar-light ">
 		<a class="navbar-brand" href="#"><img src="img/image1.png" width="40px"> Avarsalu.com</a>
-		
 	<div class="collapse navbar-collapse" id="minuMenyy">
 		<ul class="navbar-nav mr-auto">
-		  <li class="nav-item active">
-			<a class="nav-link" href="#">Avaleht</a>
-		  </li>
-		  <li class="nav-item">
-			<a class="nav-link" href="#">Tooted</a>
-		  </li>
-		  <li class="nav-item">
-			<a class="nav-link" href="#">Kontakt</a>
-		  </li>
-		  <li class="nav-item">
-			<a class="nav-link" href="#">Admin</a>
-		  </li>
-		  <i class="bi bi-bag"></i>
+			<li class="nav-item active">
+				<a class="nav-link" href="#">Avaleht</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="#">Tooted</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="#">Kontakt</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="#">Admin</a>
+			</li>
+			<li class="nav-item">
+			<a class="fa-solid fa-bag-shopping"></a>
+			</li>
 		</ul>
 	  </div>
 	</nav>
 	<div class="row">
 			<div class="col">
-				<h1 class="display-4">SUPER ALA- <br> EALISED, KÕIK -20%!</h1>
-				<p ckass="lead">KINDLASTI kasutan bs5'e</p>
+				<br><br><br><br><br><br><br>
+				<h1> <b> SUPER ALA- <br> EALISED, KÕIK -20%! </b></h1>
+				<p class="lead">KINDLASTI kasutan bs5'e</p>
 				<button type="button" class="btn btn-success">Vaata pakkumisi -></button>
 			</div>
 			<div class="col">
 				<img src="img/image1.png" class="img-fluid float-right" width="1000">
 			</div>
 		</div>
+	</div>
 	</div>
 	<h3 class="text-center">Parimad pakkumised</h3>
 	<div class="container mt-5">
@@ -73,7 +77,7 @@ Loo adminni leht, kus admin saab tooteid kustutada ja lisada 4p
 			<img src="<?php echo $image; ?>" class="card-img-top" height="300" alt="<?php echo $name; ?>">
          <div class="card-body">
 		 <h5 class="card-title"><?php echo $name; ?></h5>
-            <p class="card-text">Price: $<?php echo $price; ?></p>
+            <p class="card-text">Hind: <?php echo $price; ?></p>
         </div>
         </div>
 

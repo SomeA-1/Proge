@@ -9,6 +9,7 @@
 <div class="container">
 <?php
 // Arko Avarsalu, Ül x, ..24
+error_reporting(0);
 //sõiduaeg
 echo "<br><form action='#' method='get'> Stardi ja lõpu aeg (h:mm) <input type='text' name='sa'> <input type='text' name='la'> <input type='submit' value='Tee sõitu'></form><br>";
 if (isset($_GET['sa']) && isset($_GET['la'])){

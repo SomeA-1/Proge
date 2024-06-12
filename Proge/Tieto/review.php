@@ -57,8 +57,8 @@ if(isset($_GET['id'])){
     $kommentaar = $_GET["kommentaar"];
     $rate = $_GET["rate"];
     $id = $_GET["id"];
-    $aid = null;
-    $paring3 = "INSERT INTO `arvustused` (`asukoha_id`, `nimi`, `hinnang`, `kommentaar`, `arvustuse_id`) VALUES ('$id', '$nimi', '$rate, '$kommentaar', NULL)";
+    echo $rate;
+    $paring3 = "INSERT INTO `arvustused` (`asukoha_id`, `nimi`, `hinnang`, `kommentaar`) VALUES ('$id', '$nimi', '$rate', '$kommentaar')";
     $valjund3 = mysqli_query($yhendus, $paring3);
     
     #header('Location: review.php?id=' . $id);

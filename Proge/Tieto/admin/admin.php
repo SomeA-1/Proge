@@ -1,5 +1,12 @@
-<h1>PALJU LAHEDAM admini leht kui TAVAKASUTAJATEL!</h1>
-<?php include('config.php'); ?>
+
+<?php include('config.php'); 
+if (isset($_SESSION['tuvastamine'])) {
+echo "<h1>PALJU LAHEDAM admini leht kui TAVAKASUTAJATEL!</h1>";
+}
+else {
+  header('Location: login.php');
+}
+?>
 <!doctype html>
 <html lang="et">
   <head>
@@ -62,5 +69,3 @@ echo "</table>";
 </body>
 </html>
 
-
-?>

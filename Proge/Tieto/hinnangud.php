@@ -20,6 +20,7 @@ $total = 0;
 $sum = 0;
 $average = 0;
 echo "<div class='container'>";
+echo '<a href="admin/login.php">Logi Sisse</a>';
 echo "<table border='1'>
 <tr>
 <th>ID</th>
